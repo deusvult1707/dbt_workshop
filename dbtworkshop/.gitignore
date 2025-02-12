@@ -1,4 +1,9 @@
-
+dbtworkshop/logs/dbt.log
+dbtworkshop/target/graph_summary.json
+dbtworkshop/target/graph.gpickle
+dbtworkshop/target/manifest.json
+dbtworkshop/target/partial_parse.msgpack
+dbtworkshop/target/run_results.json
 target/
 dbt_packages/
 logs/

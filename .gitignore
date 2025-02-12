@@ -4,3 +4,13 @@ dbtworkshop/target/graph.gpickle
 dbtworkshop/target/manifest.json
 dbtworkshop/target/partial_parse.msgpack
 dbtworkshop/target/run_results.json
+target/
+dbt_packages/
+logs/
+venv/
+dbtworkshop/analyses
+dbtworkshop/logs
+dbtworkshop/macros
+dbtworkshop/seeds
+dbtworkshop/snapshots
+dbtworkshop/target
