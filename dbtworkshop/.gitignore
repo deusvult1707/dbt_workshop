@@ -3,3 +3,9 @@ target/
 dbt_packages/
 logs/
 venv/
+dbtworkshop/analyses
+dbtworkshop/logs
+dbtworkshop/macros
+dbtworkshop/seeds
+dbtworkshop/snapshots
+dbtworkshop/target
