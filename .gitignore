@@ -8,3 +8,4 @@ dbtworkshop/macros/
 dbtworkshop/seeds/
 dbtworkshop/snapshots/
 dbtworkshop/target/
+dbtworkshop/logs/dbt.log
