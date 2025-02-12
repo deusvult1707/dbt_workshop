@@ -150,3 +150,63 @@ Happy modeling!
 [0m13:03:45.830965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F9705FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F9643C400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F9643C4C0>]}
 [0m13:03:45.830965 [debug] [MainThread]: Flushing usage events
 [0m13:03:46.360743 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:12:49.736619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D6162D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D80AF790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D80AF580>]}
+
+
+============================== 17:12:49.740620 | dfa8128a-2345-476f-8d4a-6f43c149cb68 ==============================
+[0m17:12:49.740620 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:12:49.741619 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\dmitry.v\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --select tag:staging', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:12:49.741619 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:12:49.743619 [debug] [MainThread]: Command `dbt run` failed at 17:12:49.742619 after 0.06 seconds
+[0m17:12:49.743619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D6162D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D80AF520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168D80AF640>]}
+[0m17:12:49.744620 [debug] [MainThread]: Flushing usage events
+[0m17:12:50.393849 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:13:24.129570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FC870E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FE7AE790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FE7AE9A0>]}
+
+
+============================== 17:13:24.132571 | 2d33e661-bab9-4f2c-8cde-7bf80f36e9f9 ==============================
+[0m17:13:24.132571 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:13:24.133570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\dmitry.v\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select tag:staging', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:24.134571 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:13:24.135571 [debug] [MainThread]: Command `dbt run` failed at 17:13:24.134571 after 0.06 seconds
+[0m17:13:24.135571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FC870E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FE7AE9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208FE7AE6D0>]}
+[0m17:13:24.135571 [debug] [MainThread]: Flushing usage events
+[0m17:13:24.666800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:15:13.061507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D245300DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D24723E7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D24723E9D0>]}
+
+
+============================== 17:15:13.064507 | 9bb2aed0-7d40-499b-9a11-db7947fe2f9e ==============================
+[0m17:15:13.064507 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:15:13.065507 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\dmitry.v\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select tag:staging', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:15:13.065507 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:15:13.066508 [debug] [MainThread]: Command `dbt run` failed at 17:15:13.066508 after 0.06 seconds
+[0m17:15:13.067507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D245300DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D24723EA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D24723E910>]}
+[0m17:15:13.067507 [debug] [MainThread]: Flushing usage events
+[0m17:15:13.704430 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:15:31.959959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001249FE5FDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000124A1D9E6A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000124A1D9E490>]}
+
+
+============================== 17:15:31.962959 | 970faa3c-ad9f-440e-9e5f-f970d06bd21f ==============================
+[0m17:15:31.962959 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:15:31.962959 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\dmitry.v\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:15:31.963960 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:15:31.964960 [debug] [MainThread]: Command `dbt deps` failed at 17:15:31.964960 after 0.06 seconds
+[0m17:15:31.965960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001249FE5FDF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000124A1D9EA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000124A1D9ED00>]}
+[0m17:15:31.965960 [debug] [MainThread]: Flushing usage events
+[0m17:15:32.492110 [debug] [MainThread]: An error was encountered while trying to flush usage events

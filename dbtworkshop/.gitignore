@@ -1,0 +1,7 @@
+target/
+dbt_packages/
+logs/
+venv/
+dbtworkshop/logs/
+.venv/
+dbtworkshop/target/
