@@ -3376,3 +3376,322 @@ drop view if exists "postgres"."dev"."stg_stripe_payment__dbt_backup" cascade
 [0m16:16:46.464760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B25A393D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B25A6E8430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B25CFC0940>]}
 [0m16:16:46.464760 [debug] [MainThread]: Flushing usage events
 [0m16:16:47.100179 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:19:55.730973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C3A32D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C5980760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C59805B0>]}
+
+
+============================== 16:19:55.733972 | 741bbe3b-3e42-441b-9a31-4ca2db01ae46 ==============================
+[0m16:19:55.733972 [info ] [MainThread]: Running with dbt=1.9.2
+[0m16:19:55.734972 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\dmitry.v\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\dmitry.v\\Documents\\dbt\\dbt_workshop\\dbtworkshop\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select tag:staging', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:19:55.876974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C59514F0>]}
+[0m16:19:55.919975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C2D462E0>]}
+[0m16:19:55.921976 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:19:56.071978 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m16:19:56.197980 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:19:56.198980 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:19:56.202980 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbtworkshop.example
+[0m16:19:56.243981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C60DF130>]}
+[0m16:19:56.324984 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbtworkshop\target\manifest.json
+[0m16:19:56.327982 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbtworkshop\target\semantic_manifest.json
+[0m16:19:56.344984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C613BEE0>]}
+[0m16:19:56.344984 [info ] [MainThread]: Found 3 models, 7 data tests, 3 sources, 433 macros
+[0m16:19:56.345984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C6082310>]}
+[0m16:19:56.346984 [info ] [MainThread]: 
+[0m16:19:56.346984 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:19:56.347985 [info ] [MainThread]: 
+[0m16:19:56.348984 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:19:56.351984 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m16:19:56.395984 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m16:19:56.396985 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:19:56.396985 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:19:56.430985 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.034 seconds
+[0m16:19:56.432985 [debug] [ThreadPool]: On list_postgres: Close
+[0m16:19:56.433989 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_dev'
+[0m16:19:56.438987 [debug] [ThreadPool]: Using postgres connection "list_postgres_dev"
+[0m16:19:56.438987 [debug] [ThreadPool]: On list_postgres_dev: BEGIN
+[0m16:19:56.439986 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:19:56.471987 [debug] [ThreadPool]: SQL status: BEGIN in 0.032 seconds
+[0m16:19:56.471987 [debug] [ThreadPool]: Using postgres connection "list_postgres_dev"
+[0m16:19:56.472986 [debug] [ThreadPool]: On list_postgres_dev: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "connection_name": "list_postgres_dev"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m16:19:56.476987 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.004 seconds
+[0m16:19:56.477986 [debug] [ThreadPool]: On list_postgres_dev: ROLLBACK
+[0m16:19:56.477986 [debug] [ThreadPool]: On list_postgres_dev: Close
+[0m16:19:56.482985 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:56.483986 [debug] [MainThread]: On master: BEGIN
+[0m16:19:56.483986 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:19:56.615989 [debug] [MainThread]: SQL status: BEGIN in 0.132 seconds
+[0m16:19:56.616990 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:56.616990 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:19:56.621990 [debug] [MainThread]: SQL status: SELECT 6 in 0.005 seconds
+[0m16:19:56.623988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C611D0D0>]}
+[0m16:19:56.623988 [debug] [MainThread]: On master: ROLLBACK
+[0m16:19:56.624988 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:56.624988 [debug] [MainThread]: On master: BEGIN
+[0m16:19:56.624988 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m16:19:56.625989 [debug] [MainThread]: On master: COMMIT
+[0m16:19:56.625989 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:56.625989 [debug] [MainThread]: On master: COMMIT
+[0m16:19:56.626989 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m16:19:56.626989 [debug] [MainThread]: On master: Close
+[0m16:19:56.627989 [debug] [Thread-1  ]: Began running node model.dbtworkshop.stg_jaffle_shop__customers
+[0m16:19:56.628990 [info ] [Thread-1  ]: 1 of 3 START sql view model dev.stg_jaffle_shop__customers ..................... [RUN]
+[0m16:19:56.629990 [debug] [Thread-1  ]: Acquiring new postgres connection 'model.dbtworkshop.stg_jaffle_shop__customers'
+[0m16:19:56.629990 [debug] [Thread-1  ]: Began compiling node model.dbtworkshop.stg_jaffle_shop__customers
+[0m16:19:56.635989 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.636990 [debug] [Thread-1  ]: Began executing node model.dbtworkshop.stg_jaffle_shop__customers
+[0m16:19:56.661028 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.661990 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.661990 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: BEGIN
+[0m16:19:56.662990 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m16:19:56.804331 [debug] [Thread-1  ]: SQL status: BEGIN in 0.142 seconds
+[0m16:19:56.805332 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.805332 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__customers"} */
+
+  create view "postgres"."dev"."stg_jaffle_shop__customers__dbt_tmp"
+    
+    
+  as (
+    select
+    id as customer_id,
+    first_name,
+    last_name
+
+from "postgres"."jaffle_shop"."customers"
+  );
+[0m16:19:56.808331 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.003 seconds
+[0m16:19:56.813331 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.813331 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__customers"} */
+alter table "postgres"."dev"."stg_jaffle_shop__customers" rename to "stg_jaffle_shop__customers__dbt_backup"
+[0m16:19:56.814332 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:56.816332 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.817332 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__customers"} */
+alter table "postgres"."dev"."stg_jaffle_shop__customers__dbt_tmp" rename to "stg_jaffle_shop__customers"
+[0m16:19:56.817332 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:56.829332 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: COMMIT
+[0m16:19:56.830332 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.830332 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: COMMIT
+[0m16:19:56.833332 [debug] [Thread-1  ]: SQL status: COMMIT in 0.002 seconds
+[0m16:19:56.839333 [debug] [Thread-1  ]: Applying DROP to: "postgres"."dev"."stg_jaffle_shop__customers__dbt_backup"
+[0m16:19:56.843333 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__customers"
+[0m16:19:56.843333 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__customers"} */
+drop view if exists "postgres"."dev"."stg_jaffle_shop__customers__dbt_backup" cascade
+[0m16:19:56.845333 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.001 seconds
+[0m16:19:56.847334 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__customers: Close
+[0m16:19:56.849382 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C2292EB0>]}
+[0m16:19:56.850335 [info ] [Thread-1  ]: 1 of 3 OK created sql view model dev.stg_jaffle_shop__customers ................ [[32mCREATE VIEW[0m in 0.22s]
+[0m16:19:56.851334 [debug] [Thread-1  ]: Finished running node model.dbtworkshop.stg_jaffle_shop__customers
+[0m16:19:56.851334 [debug] [Thread-1  ]: Began running node model.dbtworkshop.stg_jaffle_shop__orders
+[0m16:19:56.852334 [info ] [Thread-1  ]: 2 of 3 START sql view model dev.stg_jaffle_shop__orders ........................ [RUN]
+[0m16:19:56.852334 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbtworkshop.stg_jaffle_shop__customers, now model.dbtworkshop.stg_jaffle_shop__orders)
+[0m16:19:56.853334 [debug] [Thread-1  ]: Began compiling node model.dbtworkshop.stg_jaffle_shop__orders
+[0m16:19:56.855333 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.856333 [debug] [Thread-1  ]: Began executing node model.dbtworkshop.stg_jaffle_shop__orders
+[0m16:19:56.859333 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.860333 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.860333 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: BEGIN
+[0m16:19:56.860333 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:19:56.894334 [debug] [Thread-1  ]: SQL status: BEGIN in 0.033 seconds
+[0m16:19:56.894334 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.895334 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__orders"} */
+
+  create view "postgres"."dev"."stg_jaffle_shop__orders__dbt_tmp"
+    
+    
+  as (
+    select
+    id as order_id,
+    user_id as customer_id,
+    order_date,
+    status
+
+from "postgres"."jaffle_shop"."orders"
+  );
+[0m16:19:56.898333 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.003 seconds
+[0m16:19:56.901334 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.901334 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__orders"} */
+alter table "postgres"."dev"."stg_jaffle_shop__orders" rename to "stg_jaffle_shop__orders__dbt_backup"
+[0m16:19:56.902334 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:56.904335 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.905335 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__orders"} */
+alter table "postgres"."dev"."stg_jaffle_shop__orders__dbt_tmp" rename to "stg_jaffle_shop__orders"
+[0m16:19:56.906336 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:56.907334 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: COMMIT
+[0m16:19:56.907334 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.908334 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: COMMIT
+[0m16:19:56.909335 [debug] [Thread-1  ]: SQL status: COMMIT in 0.001 seconds
+[0m16:19:56.911335 [debug] [Thread-1  ]: Applying DROP to: "postgres"."dev"."stg_jaffle_shop__orders__dbt_backup"
+[0m16:19:56.912335 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_jaffle_shop__orders"
+[0m16:19:56.912335 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_jaffle_shop__orders"} */
+drop view if exists "postgres"."dev"."stg_jaffle_shop__orders__dbt_backup" cascade
+[0m16:19:56.914337 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.001 seconds
+[0m16:19:56.915336 [debug] [Thread-1  ]: On model.dbtworkshop.stg_jaffle_shop__orders: Close
+[0m16:19:56.916335 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C66C8E20>]}
+[0m16:19:56.916335 [info ] [Thread-1  ]: 2 of 3 OK created sql view model dev.stg_jaffle_shop__orders ................... [[32mCREATE VIEW[0m in 0.06s]
+[0m16:19:56.917334 [debug] [Thread-1  ]: Finished running node model.dbtworkshop.stg_jaffle_shop__orders
+[0m16:19:56.918335 [debug] [Thread-1  ]: Began running node model.dbtworkshop.stg_stripe_payment
+[0m16:19:56.918335 [info ] [Thread-1  ]: 3 of 3 START sql view model dev.stg_stripe_payment ............................. [RUN]
+[0m16:19:56.919336 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbtworkshop.stg_jaffle_shop__orders, now model.dbtworkshop.stg_stripe_payment)
+[0m16:19:56.919336 [debug] [Thread-1  ]: Began compiling node model.dbtworkshop.stg_stripe_payment
+[0m16:19:56.922337 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:56.922337 [debug] [Thread-1  ]: Began executing node model.dbtworkshop.stg_stripe_payment
+[0m16:19:56.958338 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:56.959337 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:56.960337 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: BEGIN
+[0m16:19:56.960337 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m16:19:56.993336 [debug] [Thread-1  ]: SQL status: BEGIN in 0.033 seconds
+[0m16:19:56.994337 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:56.994337 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_stripe_payment"} */
+
+  create view "postgres"."dev"."stg_stripe_payment__dbt_tmp"
+    
+    
+  as (
+    select
+    id as payment_id,
+    orderid as order_id,
+    paymentmethod as payment_method,
+    status,
+    -- amount is stored in cents, convert it to dollars
+    amount / 100 as amount,
+    created as created_at
+from "postgres"."stripe"."payment"
+  );
+[0m16:19:56.998336 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.003 seconds
+[0m16:19:57.000336 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:57.001335 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_stripe_payment"} */
+alter table "postgres"."dev"."stg_stripe_payment" rename to "stg_stripe_payment__dbt_backup"
+[0m16:19:57.001335 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:57.004336 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:57.004336 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_stripe_payment"} */
+alter table "postgres"."dev"."stg_stripe_payment__dbt_tmp" rename to "stg_stripe_payment"
+[0m16:19:57.005336 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.000 seconds
+[0m16:19:57.006335 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: COMMIT
+[0m16:19:57.006335 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:57.007335 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: COMMIT
+[0m16:19:57.008337 [debug] [Thread-1  ]: SQL status: COMMIT in 0.001 seconds
+[0m16:19:57.010335 [debug] [Thread-1  ]: Applying DROP to: "postgres"."dev"."stg_stripe_payment__dbt_backup"
+[0m16:19:57.011336 [debug] [Thread-1  ]: Using postgres connection "model.dbtworkshop.stg_stripe_payment"
+[0m16:19:57.011336 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "dbtworkshop", "target_name": "dev", "node_id": "model.dbtworkshop.stg_stripe_payment"} */
+drop view if exists "postgres"."dev"."stg_stripe_payment__dbt_backup" cascade
+[0m16:19:57.012336 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.001 seconds
+[0m16:19:57.013336 [debug] [Thread-1  ]: On model.dbtworkshop.stg_stripe_payment: Close
+[0m16:19:57.014336 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '741bbe3b-3e42-441b-9a31-4ca2db01ae46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C611D0D0>]}
+[0m16:19:57.014336 [info ] [Thread-1  ]: 3 of 3 OK created sql view model dev.stg_stripe_payment ........................ [[32mCREATE VIEW[0m in 0.10s]
+[0m16:19:57.015336 [debug] [Thread-1  ]: Finished running node model.dbtworkshop.stg_stripe_payment
+[0m16:19:57.016338 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:57.017336 [debug] [MainThread]: On master: BEGIN
+[0m16:19:57.017336 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:19:57.168910 [debug] [MainThread]: SQL status: BEGIN in 0.151 seconds
+[0m16:19:57.168910 [debug] [MainThread]: On master: COMMIT
+[0m16:19:57.169910 [debug] [MainThread]: Using postgres connection "master"
+[0m16:19:57.169910 [debug] [MainThread]: On master: COMMIT
+[0m16:19:57.169910 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m16:19:57.170910 [debug] [MainThread]: On master: Close
+[0m16:19:57.170910 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:19:57.171910 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m16:19:57.171910 [debug] [MainThread]: Connection 'list_postgres_dev' was properly closed.
+[0m16:19:57.172911 [debug] [MainThread]: Connection 'model.dbtworkshop.stg_stripe_payment' was properly closed.
+[0m16:19:57.172911 [info ] [MainThread]: 
+[0m16:19:57.173921 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 0.82 seconds (0.82s).
+[0m16:19:57.174914 [debug] [MainThread]: Command end result
+[0m16:19:57.190909 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbtworkshop\target\manifest.json
+[0m16:19:57.192909 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbtworkshop\target\semantic_manifest.json
+[0m16:19:57.197909 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\dmitry.v\Documents\dbt\dbt_workshop\dbtworkshop\target\run_results.json
+[0m16:19:57.197909 [info ] [MainThread]: 
+[0m16:19:57.198910 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:19:57.199910 [info ] [MainThread]: 
+[0m16:19:57.199910 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:19:57.200910 [debug] [MainThread]: Command `dbt run` succeeded at 16:19:57.200910 after 1.53 seconds
+[0m16:19:57.200910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C3A32D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C6660E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237C6660B50>]}
+[0m16:19:57.201910 [debug] [MainThread]: Flushing usage events
+[0m16:19:57.784887 [debug] [MainThread]: An error was encountered while trying to flush usage events
