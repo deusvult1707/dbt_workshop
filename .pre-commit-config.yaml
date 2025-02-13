@@ -19,14 +19,36 @@ repos:
     hooks:
       - id: black
         language_version: python3.9
+        files: ^(dbtworkshop/).*$
 
   - repo: https://github.com/pycqa/flake8
     rev: 7.1.1
     hooks:
       - id: flake8
+        files: ^(dbtworkshop/).*$
 
   - repo: https://github.com/tconbeer/sqlfmt
     rev: v0.21.0
     hooks:
       - id: sqlfmt
-        files: ^(models|analyses|tests)/.*.sql$
+        files: ^(dbtworkshop/models|dbtworkshop/analyses|dbtworkshop/tests)/.*.sql$
+
+  # - repo: https://github.com/dbt-checkpoint/dbt-checkpoint
+  #   rev: v2.0.4
+  #   hooks:
+  #     - id: check-model-has-description
+  #     - id: check-model-has-tests-by-group
+  #       args: ["--tests", "not_null", "--test-cnt", "1", "--"]
+  #     - id: check-model-has-tests-by-group
+  #       args:
+  #         [
+  #           "--tests",
+  #           "unique",
+  #           "unique_combination_of_columns",
+  #           "--test-cnt",
+  #           "1",
+  #           "--",
+  #         ]
+
+  #     - id: check-macro-has-description
+  #       files: ^(dbtworkshop/macros/).*$
