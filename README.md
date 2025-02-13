@@ -1,2 +1,2 @@
 # dbt_workshop
-education
+education 1
